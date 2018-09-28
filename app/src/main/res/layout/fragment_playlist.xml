@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:elevation="3dp"
+        android:textColor="#ff7002"
+        android:gravity="center"
+        android:textSize="27sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tvtitleplaylist"
+        android:text="NHỊP ĐIỆU CẢM XÚC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_below="@+id/tvtitleplaylist"
+        android:id="@+id/lvplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <TextView
+        android:text="Xem thêm Playlist"
+        android:textSize="19dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/iconmoreplaylist"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/lvplaylist"
+        android:id="@+id/tvviewmoreplaylist"
+        android:background="#999999"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#fdfdfd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+    android:background="@drawable/custom_background_banner"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"/>
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imvbackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_alignBottom="@id/imvbackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:elevation="5dp"
+            android:id="@+id/imvbanner"
+            android:layout_margin="3dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:elevation="3dp"
+            android:padding="1dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:text="Nen Va Hoa"
+            android:textSize="17sp"
+            android:id="@+id/tvtitlebannerbaihat"
+            android:layout_alignTop="@+id/imvbanner"
+            android:layout_toRightOf="@+id/imvbanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/imvbanner"
+            android:layout_below="@+id/tvtitlebannerbaihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/tvnoidung"
+                android:textColor="#fff"
+                android:padding="1dp"
+                android:text="Chao mung den voi AppMusic"
+                android:maxLines="2"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

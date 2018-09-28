@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@drawable/custom_background_playmusic"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:name="android.admin.com.appmusic.Fragment.Fragment_Banner"
+            android:id="@+id/fragmentbanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="android.admin.com.appmusic.Fragment.Fragment_Playlist"
+            android:id="@+id/fragmentplaylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="android.admin.com.appmusic.Fragment.Fragment_ChuDe_TheLoai_Today"
+            android:id="@+id/fragmentchudetheloai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:id="@+id/fragmentalbumhot"
+            android:name="android.admin.com.appmusic.Fragment.Fragment_Album_Hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:id="@+id/fragmentbaihathot"
+            android:name="android.admin.com.appmusic.Fragment.Fragment_Baihatyeuthich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>

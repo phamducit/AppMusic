@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imvbaihatyeuthich"
+        android:scaleType="fitXY"
+        android:layout_margin="3dp"
+        android:layout_width="@dimen/Baihatyeuthich_img_width"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/tvtenbaihatyeuthich"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="Ten Bai Hat"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/imvbaihatyeuthich"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#8c8a8a"
+        android:textSize="18dp"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Tên ca sĩ"
+        android:layout_below="@+id/tvtenbaihatyeuthich"
+        android:layout_toRightOf="@+id/imvbaihatyeuthich"
+        android:id="@+id/tvcasibaihatyeuthich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/iconlove"
+        android:id="@+id/imvthich"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+</RelativeLayout>
